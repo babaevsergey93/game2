@@ -1,0 +1,37 @@
+@keyframes move {
+    20%   {left: 40%; top: 30%;}
+    40%   {left: 60%; top: 30%;}
+    60%   {left: 40%; top: 50%;}
+    80%   {left: 60%; top: 50%;}
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+canvas{
+    background: #eee;
+    display: none;
+    margin:0 auto;
+}
+
+#start{
+    position: absolute;
+    top:30%;
+    left: 40%;
+    width: 120px;
+    height: 35px;
+    font: 500 18px/20px Arial;
+    text-transform: uppercase;
+    background-color: #0095DD;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    animation: move 7s infinite;
+}
+#start:hover {
+    background-color: #2aaeee;
+    cursor: pointer;
+}
+#start:focus {outline:0;}
